@@ -3,6 +3,11 @@ post-merge:
     update:
       run: bun install
 
+pre-commit:
+  commands:
+    lint:
+      run: bun run lint
+
 prepare-commit-msg:
   commands:
     commitzen:
