@@ -1,0 +1,15 @@
+post-merge:
+  commands:
+    update:
+      run: bun install
+
+prepare-commit-msg:
+  commands:
+    commitzen:
+      interactive: true
+      run: bun run cz --hook
+
+commit-msg:
+  commands:
+    "lint commit message":
+      run: bun run commitlint --edit {1}
