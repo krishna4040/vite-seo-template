@@ -1,7 +1,6 @@
 {
   "name": "vite-seo-template",
   "author": "krishna4040",
-  "private": true,
   "version": "0.0.1",
   "type": "module",
   "scripts": {

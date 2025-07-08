@@ -15,8 +15,7 @@ jobs:
         run: bun install
       - name: Initialize Git user
         run: |
-          git config --global user.name "krishna"
-          git config --global user.email "krishna5050@gmail.com"
+          git config --global user.name "github_bot"
       - name: Initialize Npm config
         run: npm config set //registry.npmjs.org/:_authToken ${{secrets.NPM_TOKEN}}
       - name: Release
